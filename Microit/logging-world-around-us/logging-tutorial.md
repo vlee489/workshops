@@ -9,7 +9,9 @@ Drag the ``||data: log data||`` block into the ``||loops: every 1000 ms||`` bloc
 
 ```blocks
 loops.everyInterval(1000, function () {
-    datalogger.log(datalogger.createCV("", 0))
+    datalogger.log(
+    datalogger.createCV("", 0),
+    )
 })
 ```
 
@@ -26,7 +28,9 @@ Finally we need to give set the name of what this will be stored as, in the fiel
 
 ```blocks
 loops.everyInterval(1000, function () {
-    datalogger.log(datalogger.createCV("temperature", input.temperature()))
+    datalogger.log(
+    datalogger.createCV("temperature", input.temperature()),
+    )
 })
 ```
 
@@ -51,4 +55,8 @@ loops.everyInterval(1000, function () {
 
 ```template
 loops.everyInterval(1000, function () {})
+```
+
+```package
+datalogger
 ```
