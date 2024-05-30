@@ -6,7 +6,7 @@
         "device": "*"
     },
     "files": [
-        "logging-tutorial.md"
+        "logging-world-around-us/logging-tutorial.md"
     ],
     "supportedTargets": [
         "microbit"
