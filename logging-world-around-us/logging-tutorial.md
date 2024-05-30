@@ -64,7 +64,7 @@ loops.everyInterval(1000, function () {
 })
 ```
 
-### {Step 5}
+## {Step 5}
 Now the next item we're going to add is the ``||input: light level||``
 
 First of all, click the `+` button on the ``||datalogger: Data Logger||`` block you already have out. Then head to ``||datalogger: Data Logger||`` and drag a ``||datalogger: column "" value 0||`` into slot that appeared when you pressed the `+` button
