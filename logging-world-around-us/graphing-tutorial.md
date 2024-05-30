@@ -4,6 +4,8 @@
 
 This is part to the Logging the World Around US workshop. You should have completed the logging tutorial in Makecode and uploaded it to your Micro:bit prior to starting this workshop.
 
+The prior worksheet is available [Here](https://makecode.microbit.org/#tutorial:14236-16168-51630-09241)
+
 ## Getting Started
 
 To get started with writing some Python 3, launch Mu or Thonny. This guide will assume you're using Mu.
@@ -13,8 +15,9 @@ To get started with writing some Python 3, launch Mu or Thonny. This guide will 
 Before we start writing more code, we're going to move the data that you've captured from the Micro:bit to the computer.
 
 1. Start off by plugging in your Micro:bit, if you've not done so already
-2. On the drive that shows up, find the file that ends in `.csv` and then copy this file over to Mu.
-3. Finally rename the file to something like `data.csv` so it's easier to work with.
+2. On the drive that shows up, find the `MY_DATA.HTM`' file and open it up.
+3. Click the **Download** button and down the file.
+4. Move the `microbit.csv` file to the folder you're working in. (*probably downloads*)
 
 ## Basic graph with temperature
 
@@ -43,7 +46,7 @@ Before we start writing more code, we're going to move the data that you've capt
     4. Finally for each row we'll add the `time_period` and `temperature`
 
     ```python
-    with open("data.csv", "r") as file:
+    with open("microbit.csv", "r") as file:
         data = csv.DictReader(file)
         for row in data:
             time_period.append(row["time (seconds)"])
@@ -72,7 +75,7 @@ Before we start writing more code, we're going to move the data that you've capt
     plt.show()
     ```
 
-7. Now run the code and you should see the graph.
+7. Now save the file (*probably to downloads*) and run the code and you should see the graph.
 
 ## Now try
 Now you've graphed the temperature, try to graph
