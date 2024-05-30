@@ -1,0 +1,14 @@
+{
+    "name": "workshops",
+    "version": "0.0.1",
+    "description": "",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "logging-tutorial.md"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
+}
